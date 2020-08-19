@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+    <script>
+        let num = prompt("Enter your number :");
+        let numbers = num.split("");
+        let result = "";
+        for (let count = 0; count < num.length; count++){
+            result += numbers[count];
+            if (numbers[count]%2 == 0 && numbers[count+1]%2 == 0){
+                result += "-";
+            }
+        }
+        alert(result);
+    </script>
+</body>
+</html>

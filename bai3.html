@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+    <script>
+        let string = prompt("Nhập vào văn bản");
+        var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        let result = "";
+        for (let count = 0; count < string.length; count++){
+            if (UPPER.indexOf(string[count]) !== -1){
+                result += (string[count].toLowerCase());
+            }else if (LOWER.indexOf(string[count]) !== -1){
+                result += (string[count].toUpperCase());
+            }else {
+                result += (string[count]);
+            }
+        }
+        document.write(result);
+    </script>
+</body>
+</html>
